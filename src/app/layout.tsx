@@ -17,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ClerkProvider
+          dynamic
           publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}
         >
           <ConvexClientProvider>{children}</ConvexClientProvider>
